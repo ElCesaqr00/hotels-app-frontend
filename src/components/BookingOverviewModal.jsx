@@ -31,7 +31,7 @@ const BookingOverviewModal = ({ show, handleClose, booking, hotel}) => {
 
     const days = getDatesDays(booking.checkIn, booking.checkOut);
     const total = days * hotel.price;
-
+    
     return (
         <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>

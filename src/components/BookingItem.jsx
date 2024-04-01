@@ -20,6 +20,7 @@ const BookingItem = ({ booking }) => {
 
     const price = getDatesDays(booking.checkIn, booking.checkOut) + booking.hotel.price;
 
+
     useEffect(() => {
         axios.get(`/reviews?hotelId=${booking.hotelId}&userId=${userId}`)
             .then(res => {

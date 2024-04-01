@@ -88,9 +88,9 @@ const Signup = () => {
             <Form.Label>Gender</Form.Label>
             <Form.Select aria-label="Gender" {...register('gender', {required: true})}>
               <option value="">Select your gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
             </Form.Select>
           </Form.Group>
 

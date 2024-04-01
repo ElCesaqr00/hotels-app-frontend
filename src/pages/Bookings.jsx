@@ -10,7 +10,7 @@ const Bookings = () => {
 
   const [ bookings, setBookings ] = useState([]);
   const dispatch = useDispatch();
-
+  
   useEffect(() => {
     dispatch(setIsLoading(true))
     axios.get('/bookings')
